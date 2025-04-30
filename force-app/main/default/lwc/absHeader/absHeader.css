@@ -1,0 +1,131 @@
+@import "c/absCssUtility";
+
+.header {
+    /* max-width: 130rem; */
+    position: sticky;
+    width: 100%;
+    height: 10.4rem;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+
+.ablogo {
+    width: 12rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-weight: var(--fw-normal);
+
+    padding: 0 4.8rem;
+    width: 100%;
+
+    font-size: var(--p);
+    font-family: var(--font1), var(--font2), sans-serif;
+}
+
+.nav-item-container {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.nav-item {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.nav-item:hover {
+    color: var(--primary-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+/* Dropdown styles */
+.dropdown {
+    font-size: 1.6rem;
+    display: none;
+    position: absolute;
+    top: 10rem;
+    background-color: #fff;
+    box-shadow: 0px 2rem 20px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    border-bottom-left-radius: 0.9rem;
+    border-bottom-right-radius: 0.9rem;
+    flex-direction: column;
+    padding: 3.2rem 2.4rem;
+    gap: 1.6rem;
+}
+
+.nav-item:hover .dropdown {
+    display: flex;
+}
+
+.service-dropdown {
+    width: 30rem;
+    right: 35rem;
+}
+
+.about-dropdown {
+    right: 24rem;
+}
+
+.insights-dropdown {
+    right: 10rem;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+}
+
+.links img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.dropdown-text {}
+
+
+.dropdown-text:hover {
+    color: var(--primary-color);
+}
+
+
+.links:link,
+.links:visited {
+    color: var(--shade-5) !important;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.links:hover,
+.links:active {
+    color: var(--primary-color) !important;
+}
+
+
+.cta-button {
+    background-color: var(--primary-color);
+    border-radius: var(--radius-default);
+    border: none;
+    color: white;
+    transition: all 0.3s;
+    padding: 1.2rem 1.6rem;
+
+}
+
+.cta-button:hover {
+    background-color: var(--shade-1);
+    transform: scale(1.05);
+}
