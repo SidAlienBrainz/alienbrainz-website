@@ -2,32 +2,44 @@
   @description       : 
   @author            : ChangeMeIn@UserSettingsUnder.SFDoc
   @group             : 
-  @last modified on  : 03-28-2025
+  @last modified on  : 05-20-2025
   @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
 -->
 <template>
+  <div class="body">
+    <header>
+      <c-abs-header></c-abs-header>
+    </header>
+    <main>
+      <section class="hero-section">
+        <c-abs-hero-section></c-abs-hero-section>
+        <div class="semi-circle"></div>
+      </section>
+      <section class="what-we-do-section">
+        <c-abs-what-we-do-section></c-abs-what-we-do-section>
+      </section>
+      <section class="usp-section">
+        <c-abs-quality-assurance></c-abs-quality-assurance>
+      </section>
+      <section class="engagement-section">
+        <c-abs-engagement-section></c-abs-engagement-section>
 
-    <body class="body">
+      </section>
+      <section class="achievement-section">
+        <c-abs-about-us></c-abs-about-us>
+      </section>
+      <section class="case-study-section">
+        <c-abs-case-study-section></c-abs-case-study-section>
+      </section>
+      <section class="certification-section"></section>
+      <section class="cta-section">
+        <c-abs-cta-section></c-abs-cta-section>
 
-        <header class="header">
-        </header>
+      </section>
+    </main>
 
-        <main>
-            <section class="hero-section"></section>
-            <section class="what-we-do-section">
-                <h1>What we do</h1>
-                <p>nsfghdfghdfgha</p>
-            </section>
-            <section class="usp-section"></section>
-            <section class="engagement-section"></section>
-            <section class="achievement-section"></section>
-            <section class="case-study-section"></section>
-            <section class="certification-section"></section>
-            <section class="cta-section"></section>
-        </main>
-
-
-        <footer>
-        </footer>
-    </body>
+    <footer class="cta-footer">
+      <c-abs-footer></c-abs-footer>
+    </footer>
+  </div>
 </template>
